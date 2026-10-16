@@ -1,236 +1,364 @@
-[
-  {
-    "id": "source_night_001",
-    "name": "乐播资源",
-    "baseUrl": "https://lebozy.com/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 1,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_002",
-    "name": "大地资源",
-    "baseUrl": "https://dadizy.com/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 2,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_003",
-    "name": "JKUN资源",
-    "baseUrl": "https://jkunzy.com/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 3,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_004",
-    "name": "玉兔资源",
-    "baseUrl": "https://yutuzy.com/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 4,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_005",
-    "name": "精品X资源",
-    "baseUrl": "https://jingpinx.com/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 5,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_006",
-    "name": "辣椒资源",
-    "baseUrl": "http://lajiaozy.com/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 6,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_007",
-    "name": "155资源",
-    "baseUrl": "https://155api.com/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 7,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_008",
-    "name": "滴滴资源",
-    "baseUrl": "https://didizy.com/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 8,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_009",
-    "name": "鲨鱼资源",
-    "baseUrl": "https://shayuzy5.com/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 9,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_010",
-    "name": "奥斯卡资源",
-    "baseUrl": "https://aosikazy1.com/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 10,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_011",
-    "name": "森林资源",
-    "baseUrl": "https://senlinzy.com/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 11,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_012",
-    "name": "黑料资源",
-    "baseUrl": "https://heiliaozy.com/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 12,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_013",
-    "name": "奶香香资源",
-    "baseUrl": "https://naixxzy.com/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 13,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_014",
-    "name": "杏吧资源",
-    "baseUrl": "https://sex8zy.com/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 14,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_015",
-    "name": "CK百货资源",
-    "baseUrl": "https://ckbh.me/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 15,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_016",
-    "name": "桃花资源",
-    "baseUrl": "https://thzy1.me/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 16,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_017",
-    "name": "豆豆资源",
-    "baseUrl": "https://doudouzy.com/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 17,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_018",
-    "name": "搜AV资源",
-    "baseUrl": "https://api.souavzyw.net/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 18,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_019",
-    "name": "香蕉资源",
-    "baseUrl": "https://www.xiangjiaozyw.com/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 19,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_020",
-    "name": "91精品资源",
-    "baseUrl": "https://91jpzyw.com/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 20,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_021",
-    "name": "番茄资源",
-    "baseUrl": "https://fqzy.me/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 21,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_022",
-    "name": "小鸡资源",
-    "baseUrl": "https://api.xjzyapi.com/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 22,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_023",
-    "name": "红楼资源",
-    "baseUrl": "https://hlouzy.cn/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 23,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_024",
-    "name": "老色逼资源",
-    "baseUrl": "https://laosebizy.com/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 24,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_025",
-    "name": "黄色仓库资源",
-    "baseUrl": "https://hsckzy001.com/api.php/provide/vod/",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 25,
-    "category": "vod"
-  },
-  {
-    "id": "source_night_026",
-    "name": "大奶子资源",
-    "baseUrl": "https://apidanaizi.com/api.php/provide/vod/?ac=list",
-    "group": "午夜资源站点",
-    "enabled": true,
-    "priority": 26,
-    "category": "vod"
-  }
-]
+{
+  "sites": [
+    {
+      "key": "source_night_001",
+      "name": "乐播资源",
+      "type": 1,
+      "api": "https://lbapi9.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_002",
+      "name": "大地资源",
+      "type": 1,
+      "api": "https://dadizy.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_003",
+      "name": "JKUN资源",
+      "type": 1,
+      "api": "https://jkunzyapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_004",
+      "name": "玉兔资源",
+      "type": 1,
+      "api": "https://apiyutu.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_005",
+      "name": "精品X资源",
+      "type": 1,
+      "api": "https://jingpinx.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_006",
+      "name": "辣椒资源",
+      "type": 1,
+      "api": "https://apilj.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_007",
+      "name": "155资源",
+      "type": 1,
+      "api": "https://155api.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_008",
+      "name": "滴滴资源",
+      "type": 1,
+      "api": "https://api.ddapi.cc/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_009",
+      "name": "鲨鱼资源",
+      "type": 1,
+      "api": "https://shayuapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_010",
+      "name": "奥斯卡资源",
+      "type": 1,
+      "api": "https://aosikazy.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_011",
+      "name": "森林资源",
+      "type": 1,
+      "api": "https://slapibf.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_012",
+      "name": "黑料资源",
+      "type": 1,
+      "api": "https://heiliaozy.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_013",
+      "name": "奶香香资源",
+      "type": 1,
+      "api": "https://Naixxzy.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_014",
+      "name": "杏吧资源",
+      "type": 1,
+      "api": "https://sex8zy.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_015",
+      "name": "CK资源",
+      "type": 1,
+      "api": "https://ckzy.me/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_016",
+      "name": "桃花资源",
+      "type": 1,
+      "api": "https://thzy1.me/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_017",
+      "name": "豆豆资源",
+      "type": 1,
+      "api": "https://api.douapi.cc/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_018",
+      "name": "搜AV资源",
+      "type": 1,
+      "api": "https://api.souavzyw.net/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_019",
+      "name": "香蕉资源",
+      "type": 1,
+      "api": "https://www.xiangjiaozyw.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_020",
+      "name": "番茄资源",
+      "type": 1,
+      "api": "https://fqzy.me/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_021",
+      "name": "小鸡资源",
+      "type": 1,
+      "api": "https://api.xiaojizy.live/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_022",
+      "name": "红楼资源",
+      "type": 1,
+      "api": "https://hlouzy.cn/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_023",
+      "name": "老色逼资源",
+      "type": 1,
+      "api": "https://apilsbzy1.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_024",
+      "name": "黄色仓库",
+      "type": 1,
+      "api": "https://hsckzy.xyz/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_025",
+      "name": "大奶子资源",
+      "type": 1,
+      "api": "https://apidanaizi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_026",
+      "name": "番号资源",
+      "type": 1,
+      "api": "http://fhapi9.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_027",
+      "name": "麻豆资源",
+      "type": 1,
+      "api": "https://91md.me/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_028",
+      "name": "美少女资源",
+      "type": 1,
+      "api": "https://www.msnii.com/api/json.php",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_029",
+      "name": "老鸭资源",
+      "type": 1,
+      "api": "https://api.apilyzy.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_030",
+      "name": "色南国资源",
+      "type": 1,
+      "api": "https://api.sexnguon.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_031",
+      "name": "爱蛋资源",
+      "type": 1,
+      "api": "https://lovedan.net/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_032",
+      "name": "CK百货",
+      "type": 1,
+      "api": "https://ckbh.me/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_033",
+      "name": "白嫖资源",
+      "type": 1,
+      "api": "https://www.kxgav.com/api/json.php",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_034",
+      "name": "黄AV资源",
+      "type": 1,
+      "api": "https://www.pgxdy.com/api/json.php",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_035",
+      "name": "香奶儿资源",
+      "type": 1,
+      "api": "https://www.gdlsp.com/api/json.php",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_036",
+      "name": "淫水机资源",
+      "type": 1,
+      "api": "https://www.xrbsp.com/api/json.php",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_037",
+      "name": "乐播备用",
+      "type": 1,
+      "api": "http://lbapiby.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_038",
+      "name": "森林备用",
+      "type": 1,
+      "api": "https://beiyong.slapibf.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_039",
+      "name": "搜AV备用",
+      "type": 1,
+      "api": "https://api.souavzy.vip/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "source_night_040",
+      "name": "色窝资源",
+      "type": 1,
+      "api": "https://sewozyapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    }
+  ]
+}
