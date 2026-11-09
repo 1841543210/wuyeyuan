@@ -15,7 +15,7 @@
     "name -> name": "原样保留",
     "api -> baseUrl": "原样保留，未做任何修改；KVideo 订阅导入时 searchPath/detailPath 为空，请求直接在 baseUrl 后附加 ?ac=detail&wd= 或 &ids=",
     "type=1 -> (无对应字段)": "KVideo 源格式没有 type 字段，其接口逻辑原生即 MacCMS JSON API，与原始 type=1 对应",
-    "group": "统一设为 premium：原始列表为成人源，KVideo 导入界面将 premium 分组计数标注为「成人源」，高级内容在 KVideo 中即此分组",
+    "group": "统一设为 premium：即 KVideo 的高级源分组",
     "searchable/quickSearch/filterable": "KVideo 官方格式无此三字段（其搜索统一走 ac=detail&wd=），原值保留在本报告每条记录中"
   },
   "summary": {

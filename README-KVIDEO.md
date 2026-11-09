@@ -20,8 +20,8 @@ https://raw.githubusercontent.com/1841543210/wuyeyuan/main/kvideo-sources.json
    - **名称**：任意，例如 `wuyeyuan`
    - **链接**：填入上面的订阅地址
 3. 保存后等待拉取完成（订阅支持自动刷新，也可点刷新按钮手动更新）。
-4. 本订阅中的源属于 KVideo 的 **premium（成人源）分组**——KVideo 导入界面即把该分组标注为「成人源」。
-   导入后请在 **高级源管理** 中查看这些源，在 **高级模式（成人模式）** 中浏览和搜索使用；
+4. 本订阅中的源属于 KVideo 的 **premium（高级源）分组**。
+   导入后请在 **高级源管理** 中查看这些源，在 **高级模式** 中浏览和搜索使用；
    首次进入高级内容时，按提示设置/输入高级内容密码。
 
 > 注意：订阅地址指向的是一个 JSON **配置文件**，不是单个视频 API。
@@ -61,7 +61,7 @@ https://raw.githubusercontent.com/1841543210/wuyeyuan/main/kvideo-sources.json
 | `name` | `name` | 原样保留 |
 | `api` | `baseUrl` | 原样保留，未做任何修改 |
 | `type`（全部为 1） | — | KVideo 格式无 type 字段，其接口原生即 MacCMS JSON API，与 type=1 对应 |
-| — | `group` | 统一为 `premium`（KVideo 的成人源分组） |
+| — | `group` | 统一为 `premium`（KVideo 的高级源分组） |
 | — | `priority` | 按原始顺序编号 |
 | `searchable` / `quickSearch` / `filterable` | — | KVideo 官方格式无此三字段（其搜索统一走 `ac=detail&wd=`），原值已记录在 `source-report.json` 每条记录中 |
 
