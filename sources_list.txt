@@ -1,0 +1,305 @@
+成人影视源地址列表（共100个）
+格式与原始 sources.json 一致，优先短视频/国产向
+全部来自公开网络，随时可能失效，请自行测试后使用
+============================================================
+
+001. 乐播资源
+    API: https://lbapi9.com/api.php/provide/vod/
+
+002. 乐播备用
+    API: http://lbapiby.com/api.php/provide/vod/
+
+003. JKUN资源
+    API: https://jkunzyapi.com/api.php/provide/vod/
+
+004. 155资源
+    API: https://155api.com/api.php/provide/vod/
+
+005. 麻豆资源
+    API: https://91md.me/api.php/provide/vod/
+
+006. 老鸭资源
+    API: https://api.apilyzy.com/api.php/provide/vod/
+
+007. 番号资源
+    API: http://fhapi9.com/api.php/provide/vod/
+
+008. 滴滴资源
+    API: https://api.ddapi.cc/api.php/provide/vod/
+
+009. 玉兔资源
+    API: https://apiyutu.com/api.php/provide/vod/
+
+010. 辣椒资源
+    API: https://apilj.com/api.php/provide/vod/
+
+011. 精品X资源
+    API: https://jingpinx.com/api.php/provide/vod/
+
+012. 鲨鱼资源
+    API: https://shayuapi.com/api.php/provide/vod/
+
+013. 黄AV资源
+    API: https://www.pgxdy.com/api/json.php
+
+014. 香奶儿资源
+    API: https://www.gdlsp.com/api/json.php
+
+015. 淫水机资源
+    API: https://www.xrbsp.com/api/json.php
+
+016. 色南国资源
+    API: https://api.sexnguon.com/api.php/provide/vod/
+
+017. 爱蛋资源
+    API: https://lovedan.net/api.php/provide/vod/
+
+018. CK百货
+    API: https://ckbh.me/api.php/provide/vod/
+
+019. 葡萄资源
+    API: https://api.putaozy.net/inc/apijson_vod.php
+
+020. 猫资源
+    API: https://api.maozyapi.com/inc/apijson_vod.php
+
+021. 花魁资源
+    API: https://caiji.huakuiapi.com/inc/apijson_vod.php
+
+022. TT资源
+    API: https://apittzy.com/api.php/provide/vod/
+
+023. KK资源
+    API: https://kkzy.me/api.php/provide/vod/
+
+024. 优优资源
+    API: https://www.yyzywcj.com/api.php/provide/vod/
+
+025. 丝袜资源
+    API: https://siwazyw.cc/api.php/provide/vod/
+
+026. 美少女资源
+    API: https://www.msnii.com/api/json.php
+
+027. 白嫖资源
+    API: https://www.kxgav.com/api/json.php
+
+028. 森林资源
+    API: https://slapibf.com/api.php/provide/vod/
+
+029. 湿乐园
+    API: https://xxavs.com/api.php/provide/vod/
+
+030. 奶香香资源
+    API: https://naixxzy.com/api.php/provide/vod/
+
+031. 大地资源
+    API: https://dadiapi.com/api.php
+
+032. 黄瓜资源
+    API: https://www.avre06.com/api.php/provide/vod/
+
+033. 奥斯卡资源
+    API: http://aosikazy.com/api.php/provide/vod/
+
+034. 草榴资源
+    API: https://www.caoliuzyw.com/api.php/provide/vod/
+
+035. 老色逼资源
+    API: https://apilsbzy1.com/api.php/provide/vod/
+
+036. CK资源
+    API: https://ckzy.me/api.php/provide/vod/
+
+037. 杏吧资源
+    API: https://xingba222.com/api.php/provide/vod/
+
+038. 黄色仓库
+    API: https://hsckzy888.com/api.php/provide/vod/
+
+039. 大奶子资源
+    API: https://apidanaizi.com/api.php/provide/vod/
+
+040. X细胞资源
+    API: https://www.xxibaozyw.com/api.php/provide/vod/
+
+041. souav资源
+    API: https://api.souavzy.vip/api.php/provide/vod/
+
+042. 百花资源
+    API: https://bhziyuan.com/api.php/provide/vod/
+
+043. 番茄资源
+    API: https://fqzy4.me/api.php/provide/vod/
+
+044. 小鸡资源
+    API: https://api.xiaojizy.live/provide/vod/
+
+045. 越南资源
+    API: https://vnzyz.com/api.php/provide/vod/
+
+046. 橘猫资源
+    API: https://to.to-long.com/api.php/provide/vod/
+
+047. 秀色资源
+    API: https://api.xiuseapi.com/api.php/provide/vod/
+
+048. 乐鱼资源
+    API: https://www.leyuzyapi.com/inc/api.php
+
+049. 芒果资源
+    API: https://mgzyz1.com/api.php/provide/vod/
+
+050. 523资源
+    API: https://caiji.523zyw.com/inc/api.php
+
+051. 淫窝资源
+    API: https://api.yinwoapi.com/api.php/provide/vod/
+
+052. 色窝资源
+    API: https://sewozyapi.com/api.php/provide/vod/
+
+053. 飞飞资源
+    API: http://www.feifei67.com/api.php/provide/vod/
+
+054. 91视频
+    API: https://91av.cyou/api.php/provide/vod/
+
+055. 优异资源
+    API: https://a.uezy.pw/api.php/provide/vod/
+
+056. 久久热资源
+    API: https://www.jiujiure00.com/api.php/provide/vod/
+
+057. 乐播JSON
+    API: https://lbapi9.com/api.php/provide/vod/at/json
+
+058. 滴滴JSON
+    API: https://api.ddapi.cc/api.php/provide/vod/at/json
+
+059. 155JSON
+    API: https://155api.com/api.php/provide/vod/at/json
+
+060. 番号备用
+    API: http://fhapi9.com/api.php/provide/vod/at/json
+
+061. 老鸭备用
+    API: https://api.apilyzy.com/api.php/provide/vod/at/json
+
+062. 麻豆备用
+    API: https://91md.me/api.php/provide/vod/at/json
+
+063. 色南国备用
+    API: https://api.sexnguon.com/api.php/provide/vod/at/json
+
+064. 香奶儿备用
+    API: https://www.gdlsp.com/api/xml.php
+
+065. 美少女备用
+    API: https://www.msnii.com/api/xml.php
+
+066. 黄AV备用
+    API: https://www.pgxdy.com/api/xml.php
+
+067. 丝袜备用
+    API: https://siwazyw.cc/api.php/provide/vod/at/xml/
+
+068. 秀色备用
+    API: https://api.xiuseapi.com/api.php/provide/vod/at/xml/
+
+069. 芒果备用
+    API: https://mgzyz1.com/api.php/provide/vod/at/xml/
+
+070. 乐鱼备用
+    API: https://www.leyuzyapi.com/inc/api.php
+
+071. 色猫资源
+    API: https://api.maozyapi.com/inc/api.php
+
+072. 色猫JSON
+    API: https://api.maozyapi.com/inc/apijson_vod.php
+
+073. 葡萄JSON
+    API: https://api.putaozy.net/inc/apijson_vod.php
+
+074. 花魁JSON
+    API: https://caiji.huakuiapi.com/inc/apijson_vod.php
+
+075. TT备用
+    API: https://apittzy.com/api.php/provide/vod/at/json
+
+076. KK备用
+    API: https://kkzy.me/api.php/provide/vod/at/json
+
+077. 精品备用
+    API: https://jingpinx.com/api.php/provide/vod/at/json
+
+078. 辣椒备用
+    API: https://apilj.com/api.php/provide/vod/at/json
+
+079. 玉兔备用
+    API: https://apiyutu.com/api.php/provide/vod/at/json
+
+080. 鲨鱼备用
+    API: https://shayuapi.com/api.php/provide/vod/at/json
+
+081. 森林备用
+    API: https://slapibf.com/api.php/provide/vod/at/json
+
+082. 湿乐园备用
+    API: https://xxavs.com/api.php/provide/vod/at/json
+
+083. 奶香香备用
+    API: https://naixxzy.com/api.php/provide/vod/at/json
+
+084. 大地备用
+    API: https://dadiapi.com/api.php/provide/vod/
+
+085. 黄瓜备用
+    API: https://www.avre06.com/api.php/provide/vod/at/json
+
+086. 奥斯卡备用
+    API: http://aosikazy.com/api.php/provide/vod/at/json
+
+087. 草榴备用
+    API: https://www.caoliuzyw.com/api.php/provide/vod/at/json
+
+088. 老色逼备用
+    API: https://apilsbzy1.com/api.php/provide/vod/at/json
+
+089. CK备用
+    API: https://ckzy.me/api.php/provide/vod/at/json
+
+090. 杏吧备用
+    API: https://xingba222.com/api.php/provide/vod/at/json
+
+091. 黄色仓库备用
+    API: https://hsckzy888.com/api.php/provide/vod/at/json
+
+092. 大奶子备用
+    API: https://apidanaizi.com/api.php/provide/vod/at/json
+
+093. X细胞备用
+    API: https://www.xxibaozyw.com/api.php/provide/vod/at/json
+
+094. souav备用
+    API: https://api.souavzy.vip/api.php/provide/vod/at/json
+
+095. 百花备用
+    API: https://bhziyuan.com/api.php/provide/vod/at/json
+
+096. 番茄备用
+    API: https://fqzy4.me/api.php/provide/vod/at/json
+
+097. 小鸡备用
+    API: https://api.xiaojizy.live/provide/vod/at/json
+
+098. 越南备用
+    API: https://vnzyz.com/api.php/provide/vod/at/json
+
+099. 橘猫备用
+    API: https://to.to-long.com/api.php/provide/vod/at/json
+
+100. 淫窝备用
+    API: https://api.yinwoapi.com/api.php/provide/vod/at/json
+
