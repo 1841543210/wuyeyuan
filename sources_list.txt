@@ -1,4 +1,4 @@
-成人影视源地址列表（共120个）
+影视源地址列表（共242个）
 已根据HTTP连通性筛掉明显失效的，并补充公开列表中的源
 仍需你本地再次实测（HTTP 200 不代表内容一定可用）
 ============================================================
@@ -363,3 +363,368 @@
 120. 鲨鱼备用2
     API: https://shayuapi.com/api.php/provide/vod/
 
+121. 金莲
+    API: https://111kkkkk.com/api.php/provide/vod/
+
+122. 4000zy.com
+    API: http://4000zy.com/inc/api.php
+
+123. +(不错)水蜜桃
+    API: http://51smt4.xyz/api.php/provide/vod/
+
+124. 水蜜桃
+    API: https://51smt7.xyz/api.php/provide/vod/
+
+125. AV资源
+    API: https://52zyapi.com/home/cjapi/asda/mc/vod/json
+
+126. AVAV
+    API: https://52zyapi.com/home/cjapi/asda/mc10/vod/json
+
+127. 99资源
+    API: http://99zy.pw/api.php/provide/vod/
+
+128. 玖玖资源
+    API: http://99zyba.com/api.php/provide/vod/
+
+129. aays.shaozeyk.top
+    API: https://aays.shaozeyk.top/api.php/provide/vod/
+
+130. 爱操资源
+    API: https://aicaozy.com/api.php/provide/vod/
+
+131. 辣椒
+    API: http://api.11bat.com/api.php/provide/vod/
+
+132. 搜片
+    API: https://api.douapi.cc/api.php/provide/vod/
+
+133. 国色
+    API: https://api.guosezy.com/api.php/provide/vod/
+
+134. 嘿嘿
+    API: https://api.heiapi.cc/api.php/provide/vod/
+
+135. 花色资源
+    API: https://api.huasezy.xyz/api.php/provide/vod/
+
+136. 火速
+    API: https://api.huosuapi.cc/api.php/provide/vod/
+
+137. 酷豆2
+    API: https://api.kdapi.info/api.php/provide/vod/
+
+138. 酷伦理
+    API: https://api.kudian70.com/api.php/provide/vod/
+
+139. +)S猫资源
+    API: https://api.maozyapi.com/inc/api.php
+
+140. 色猫资源（慢）
+    API: https://api.maozyapi.com/inc/api.php/provide/vod/
+
+141. 葡萄
+    API: https://api.putaozy.net/inc/api.php
+
+142. 黑料
+    API: https://api.souavzyw.net/api.php/provide/vod/
+
+143. +)速播资源
+    API: https://api.suboapi.com/api.php/provide/vod/
+
+144. 黄仓资源
+    API: https://api.xjzyapi.com/provide/vod
+
+145. 易看
+    API: https://api.yikanapi.com/api.php/provide/vod/
+
+146. 伊人资源
+    API: https://api.yirenziyuan.com/api.php/provide/vod/
+
+147. 影库资源
+    API: https://api.ykapi.net/api.php/provide/vod/
+
+148. 花椒资源
+    API: https://apihjzy.com/api.php/provide/vod/
+
+149. 老鸨资源
+    API: https://apilbzy.com/api.php/provide/vod/
+
+150. 麻豆②
+    API: http://bt4.cc/api.php/provide/vod/
+
+151. +)523资源
+    API: https://caiji.523zyw.com/inc/api.php
+
+152. 草莓资源(新增)
+    API: https://caiji.caomeiapi.com/inc/api.php
+
+153. 花魁
+    API: https://caiji.huakuiapi.com/inc/api.php
+
+154. 奶茶资源(已修复)
+    API: https://caiji.naichaapi.com/inc/api.php
+
+155. caiji10黄瓜TV
+    API: https://caiji10.com/home/cjapi/cfs6/mc10/vod/json
+
+156. 鲍鱼
+    API: http://caiji26.com/home/cjapi/p0g8/mc/vod/json
+
+157. 鲍鱼AV
+    API: http://caiji26.com/home/cjapi/p0g8/mc10/vod/json
+
+158. 鲍鱼A-V资源站
+    API: http://caiji26.com/home/cjapi/p0g8/zp/vod/json
+
+159. 爱播资源
+    API: https://cj.apiabzy.com/api.php/provide/vod/
+
+160. 影图〔APP〕
+    API: https://cj.vodimg.top/api.php/provide/vod/
+
+161. 爱播资源
+    API: https://cj1.apiabzy.com/api.php/provide/vod/
+
+162. 好片资源
+    API: https://haopianapi.com/api.php/provide/vod/
+
+163. 皇冠
+    API: https://hghhh.com/api.php/provide/vod/
+
+164. 黄色资源
+    API: https://hszy.vip/api.php/provide/vod/
+
+165. 痴汉队长
+    API: https://javcaptain.com/api.php/provide/vod/
+
+166. 精工厂
+    API: https://jgczyapi.com/home/cjapi/kld2/mc/vod/json
+
+167. 精工厂资源
+    API: https://jgczyapi.com/home/cjapi/kld2/mc10/vod/json
+
+168. 精工厂资源站
+    API: https://jgczyapi.com/home/cjapi/kld2/zp/vod/json
+
+169. 佳丽
+    API: https://jializyzapi.com/api.php/provide/vod/
+
+170. 空姐AV
+    API: https://kongjieav.com/api.php/provide/vod/
+
+171. 酷豆资源
+    API: https://kudouzy.com/api.php/provide/vod/
+
+172. 浪潮资源
+    API: http://langchaozy11.com/api.php/provide/vod/
+
+173. 浪潮资源
+    API: http://langchaozy6.com/api.php/provide/vod/
+
+174. 老鸭TV
+    API: https://laoyatv.com/api.php/provide/vod/
+
+175. 老鸭资源
+    API: http://laoyazy.vip/api.php/provide/vod/
+
+176. 麻豆视频2
+    API: https://madouse.la/api.php/provide/vod/
+
+177. +)JAV名优
+    API: http://mygzycj.com/api.php
+
+178. 热巴
+    API: http://reba.aishunxs.com/api.php/provide/vod/
+
+179. 色屌丝资源
+    API: https://sdszyapi.com/home/cjapi/asbb/mc10/vod/json
+
+180. 屌丝
+    API: https://sdszyapi.com/home/cjapi/asbb/sea/vod/json
+
+181. 色色资源
+    API: http://secj8.com/inc/api.php
+
+182. 鲨鱼18+
+    API: https://shayuapi.com/api.php/Seacms/vod
+
+183. 淘片影视
+    API: https://taopianapi.com/home/cjapi/as/mc/vod/json
+
+184. 天狐资源
+    API: https://thzy1.me/api.php/provide/vod/
+
+185. 甜蜜资源
+    API: https://timizy10.cc/api.php/provide/vod/
+
+186. 万影色
+    API: https://wanying4.com/api.php/provide/vod/
+
+187. 资源
+    API: http://www.3366zy.com/api.php/provide/vod/
+
+188. +(良)4000资源
+    API: https://www.4000zy.com/inc/api.php
+
+189. 抖阴视频
+    API: https://www.888dav.com/api.php/provide/vod/
+
+190. ASMR19〔官源〕
+    API: http://www.asmr19.in/api.php/provide/vod/
+
+191. 亚洲成人在线
+    API: https://www.caiji01.com/home/cjapi/cfd2/mc10/vod/json
+
+192. 草榴视频
+    API: https://www.caiji02.com/home/cjapi/cfas/mc10/vod/json
+
+193. 一本道资源
+    API: https://www.caiji03.com/home/cjapi/cfg8/mc10/vod/json
+
+194. 一本道资源
+    API: https://www.caiji03.com/home/cjapi/cfg8/zp/vod/json
+
+195. 麻豆视频
+    API: https://www.caiji04.com/home/cjapi/cfc7/mc10/vod/json
+
+196. 青青草
+    API: https://www.caiji05.com/home/cjapi/cfda/mc/vod/json
+
+197. 青青草视频
+    API: https://www.caiji05.com/home/cjapi/cfda/mc10/vod/json
+
+198. 久久热在线
+    API: https://www.caiji06.com/home/cjapi/cfbb/mc10/vod/json
+
+199. 日本AV在线
+    API: https://www.caiji07.com/home/cjapi/cfcf/mc10/vod/json
+
+200. 日本A-V在线资源站
+    API: https://www.caiji07.com/home/cjapi/cfcf/zp/vod/json
+
+201. 大香蕉资源
+    API: https://www.caiji08.com/home/cjapi/cfkl/mc10/vod/json
+
+202. 快播盒子资源
+    API: https://www.caiji09.com/home/cjapi/cfp0/mc10/vod/json
+
+203. 快播盒子资源站
+    API: https://www.caiji09.com/home/cjapi/cfp0/zp/vod/json
+
+204. 黄瓜TV资源
+    API: https://www.caiji10.com/home/cjapi/cfs6/mc/vod/xml
+
+205. 黄瓜TV资源
+    API: https://www.caiji10.com/home/cjapi/cfs6/mc10/vod/json
+
+206. 黄瓜TV资源站
+    API: https://www.caiji10.com/home/cjapi/cfs6/zp/vod/json
+
+207. 我要啪啪
+    API: http://www.caiji21.com/home/cjapi/klkl/mc10/vod/json
+
+208. AV集中淫
+    API: https://www.caiji22.com/home/cjapi/klp0/mc10/vod/json
+
+209. 夜夜撸资源
+    API: https://www.caiji23.com/home/cjapi/kls6/mc10/vod/json
+
+210. 👙大屌丝
+    API: https://www.caiji24.com/home/cjapi/kls6/mc10/vod/json
+
+211. 大屌丝资源
+    API: http://www.caiji24.com/home/cjapi/p0d2/mc10/vod/json
+
+212. 咪咪
+    API: http://www.caiji25.com/home/cjapi/p0as/mc/vod/json
+
+213. 咪咪资源
+    API: http://www.caiji25.com/home/cjapi/p0as/mc10/vod/json
+
+214. 咪咪资源站
+    API: http://www.caiji25.com/home/cjapi/p0as/zp/vod/json
+
+215. 大雕资源
+    API: http://www.caobi209.vip/api.php/provide/vod/
+
+216. 草榴资源
+    API: https://www.caoliuzy.com/api.php/provide/vod/
+
+217. 大MM
+    API: https://www.dmmapi.com/home/cjapi/asd2c7/mc/vod/json
+
+218. 大MM资源
+    API: https://www.dmmapi.com/home/cjapi/asd2c7/mc10/vod/json
+
+219. 越南
+    API: https://www.heiliaozyapi.com/api.php/provide/vod/
+
+220. 佳丽资源
+    API: http://www.jializyzapi.com/api.php/provide/vod/
+
+221. 精品资源
+    API: https://www.jingpinx.com/api.php/provide/vod/
+
+222. 快播资源〔APP〕
+    API: http://www.kuaibozy.com/api.php/provide/vod/
+
+223. 狼友
+    API: https://www.langyouzy.com/api.php/provide/vod/
+
+224. 老司鸡资源
+    API: https://www.lsjapi.com/home/cjapi/asd2g8/mc10/vod/json
+
+225. 芒果18+
+    API: https://www.mgav1.cc/api.php/provide/vod/
+
+226. 水帘洞资源
+    API: https://www.sldcaiji.com/home/cjapi/s6da/mc10/vod/json
+
+227. 淫人妻资源
+    API: http://www.yrqcaiji.com/home/cjapi/s6c7/mc10/vod/json
+
+228. M3U8资源〔官源〕
+    API: https://www.zycaiji.net:7788/api.php/provide/vod/
+
+229. 小处女资源
+    API: http://xcncaiji.com/home/cjapi/s6bb/mc10/vod/json
+
+230. 小姐姐
+    API: https://xjjzyapi.com/home/cjapi/askl/mc/vod/json
+
+231. 小姐姐资源
+    API: https://xjjzyapi.com/home/cjapi/askl/mc10/vod/json
+
+232. 高清AV无码
+    API: http://xoxozy.com/api.php/provide/vod/
+
+233. 点点
+    API: https://xx55zyapi.com/home/cjapi/ascf/mc/vod/json
+
+234. 点点娱乐
+    API: https://xx55zyapi.com/home/cjapi/ascf/mc10/vod/json
+
+235. 点点娱乐资源站
+    API: https://xx55zyapi.com/home/cjapi/ascf/zp/vod/json
+
+236. 银龙资源(已修复)
+    API: https://yinlong.tv/api.php/provide/vod/
+
+237. 玉兔资源3
+    API: https://yutuzy3.com/api.php/provide/vod/
+
+238. 北雁影视〔官源〕
+    API: https://zy.beiyan.cc:4433/api.php/provide/vod/
+
+239. 森林资源
+    API: https://beiyong.slapibf.com/api.php/provide/vod/
+
+240. 黄色仓库
+    API: https://hsckzy.xyz/api.php/provide/vod
+
+241. 黄色仓库2
+    API: http://www.244444.xyz/api.php/provide/vod
+
+242. 香蕉资源
+    API: https://www.xiangjiaozyw.com/api.php/provide/vod
