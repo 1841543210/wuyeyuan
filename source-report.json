@@ -1,0 +1,2486 @@
+{
+  "generated_at": "2026-11-09T19:30:12+08:00",
+  "repository": "https://github.com/1841543210/wuyeyuan",
+  "subscription_file": "kvideo-sources.json",
+  "subscription_raw_url": "https://raw.githubusercontent.com/1841543210/wuyeyuan/main/kvideo-sources.json",
+  "format_basis": {
+    "project": "KVideo (KuekHaoYang/KVideo)",
+    "reference_commit": "831aa7b9388227829a6a6db58808db153a2c4b8c",
+    "parser": "lib/utils/source-import-utils.ts: parseSourcesFromJson / isValidSourceFormat / convertToVideoSource",
+    "request_logic": "lib/api/search-api.ts (ac=detail&wd=), lib/api/detail-api.ts (ac=detail&ids=)",
+    "validation": "PASSED - KVideo 官方 parseSourcesFromJson 实测解析 120/120 条，isValidSourceFormat 全部通过，ID 无重复，API 地址与名称与原始 sources.json 逐条比对无改动"
+  },
+  "field_mapping": {
+    "key -> id": "沿用原始唯一 key 作为 KVideo id",
+    "name -> name": "原样保留",
+    "api -> baseUrl": "原样保留，未做任何修改；KVideo 订阅导入时 searchPath/detailPath 为空，请求直接在 baseUrl 后附加 ?ac=detail&wd= 或 &ids=",
+    "type=1 -> (无对应字段)": "KVideo 源格式没有 type 字段，其接口逻辑原生即 MacCMS JSON API，与原始 type=1 对应",
+    "group": "统一设为 premium：原始列表为成人源，KVideo 导入界面将 premium 分组计数标注为「成人源」，高级内容在 KVideo 中即此分组",
+    "searchable/quickSearch/filterable": "KVideo 官方格式无此三字段（其搜索统一走 ac=detail&wd=），原值保留在本报告每条记录中"
+  },
+  "summary": {
+    "original_total": 120,
+    "duplicates_removed": 0,
+    "converted_total": 120,
+    "tested_ok": 52,
+    "tested_failed": 68,
+    "untested": 0,
+    "by_status": {
+      "正常": 52,
+      "播放地址异常": 15,
+      "格式不兼容": 20,
+      "连接失败": 27,
+      "搜索失败": 5,
+      "详情失败": 1
+    }
+  },
+  "duplicates_removed_detail": [],
+  "unconvertible_sources": [],
+  "kvideo_unusable_sources": [
+    {
+      "id": "s018",
+      "name": "黄AV-XML",
+      "api": "https://www.pgxdy.com/api/xml.php",
+      "status": "格式不兼容",
+      "note": "返回XML，KVideo 仅解析 JSON"
+    },
+    {
+      "id": "s020",
+      "name": "香奶儿-XML",
+      "api": "https://www.gdlsp.com/api/xml.php",
+      "status": "格式不兼容",
+      "note": "返回XML，KVideo 仅解析 JSON"
+    },
+    {
+      "id": "s023",
+      "name": "美少女-XML",
+      "api": "https://www.msnii.com/api/xml.php",
+      "status": "格式不兼容",
+      "note": "返回XML，KVideo 仅解析 JSON"
+    },
+    {
+      "id": "s031",
+      "name": "湿乐园",
+      "api": "https://xxavs.com/api.php/provide/vod/",
+      "status": "格式不兼容",
+      "note": "返回XML，KVideo 仅解析 JSON"
+    },
+    {
+      "id": "s034",
+      "name": "优异资源",
+      "api": "https://a.uezy.pw/api.php/provide/vod/",
+      "status": "格式不兼容",
+      "note": "返回XML，KVideo 仅解析 JSON"
+    },
+    {
+      "id": "s036",
+      "name": "芒果资源",
+      "api": "https://mgzyz1.com/api.php/provide/vod/",
+      "status": "格式不兼容",
+      "note": "返回XML，KVideo 仅解析 JSON"
+    },
+    {
+      "id": "s037",
+      "name": "芒果-XML",
+      "api": "https://mgzyz1.com/api.php/provide/vod/at/xml/",
+      "status": "格式不兼容",
+      "note": "返回XML，KVideo 仅解析 JSON"
+    },
+    {
+      "id": "s038",
+      "name": "91视频",
+      "api": "https://91av.cyou/api.php/provide/vod/",
+      "status": "格式不兼容",
+      "note": "返回XML，KVideo 仅解析 JSON"
+    },
+    {
+      "id": "s041",
+      "name": "大地资源",
+      "api": "https://dadiapi.com/api.php",
+      "status": "格式不兼容",
+      "note": "返回XML，KVideo 仅解析 JSON"
+    },
+    {
+      "id": "s053",
+      "name": "KK资源",
+      "api": "https://kkzy.me/api.php/provide/vod/",
+      "status": "格式不兼容",
+      "note": "返回XML，KVideo 仅解析 JSON"
+    },
+    {
+      "id": "s073",
+      "name": "大地备用2",
+      "api": "http://dadiapi.com/api.php",
+      "status": "格式不兼容",
+      "note": "返回XML，KVideo 仅解析 JSON"
+    },
+    {
+      "id": "s085",
+      "name": "湿乐园JSON",
+      "api": "https://xxavs.com/api.php/provide/vod/at/json",
+      "status": "格式不兼容",
+      "note": "返回XML，KVideo 仅解析 JSON"
+    },
+    {
+      "id": "s086",
+      "name": "小鸡JSON",
+      "api": "https://api.xiaojizy.live/provide/vod/at/json",
+      "status": "格式不兼容",
+      "note": "返回非JSON内容，KVideo 仅解析 JSON"
+    },
+    {
+      "id": "s089",
+      "name": "爱蛋JSON",
+      "api": "https://lovedan.net/api.php/provide/vod/at/json",
+      "status": "格式不兼容",
+      "note": "返回XML，KVideo 仅解析 JSON"
+    },
+    {
+      "id": "s090",
+      "name": "91视频JSON",
+      "api": "https://91av.cyou/api.php/provide/vod/at/json",
+      "status": "格式不兼容",
+      "note": "返回XML，KVideo 仅解析 JSON"
+    },
+    {
+      "id": "s103",
+      "name": "湿乐园备用2",
+      "api": "https://xxavs.com/api.php/provide/vod/",
+      "status": "格式不兼容",
+      "note": "返回XML，KVideo 仅解析 JSON"
+    },
+    {
+      "id": "s106",
+      "name": "优异备用2",
+      "api": "https://a.uezy.pw/api.php/provide/vod/",
+      "status": "格式不兼容",
+      "note": "返回XML，KVideo 仅解析 JSON"
+    },
+    {
+      "id": "s108",
+      "name": "芒果备用2",
+      "api": "https://mgzyz1.com/api.php/provide/vod/",
+      "status": "格式不兼容",
+      "note": "返回XML，KVideo 仅解析 JSON"
+    },
+    {
+      "id": "s109",
+      "name": "91视频备用2",
+      "api": "https://91av.cyou/api.php/provide/vod/",
+      "status": "格式不兼容",
+      "note": "返回XML，KVideo 仅解析 JSON"
+    },
+    {
+      "id": "s112",
+      "name": "大地备用3",
+      "api": "https://dadiapi.com/api.php",
+      "status": "格式不兼容",
+      "note": "返回XML，KVideo 仅解析 JSON"
+    }
+  ],
+  "conversion_anomalies": [],
+  "test_method": "逐源低频实测（并发4，每源间隔请求）：列表 ac=detail -> 搜索 ac=detail&wd=<真实片名片段> -> 详情 ac=detail&ids= -> 首集播放地址实际抓取校验；HTTP 200 但结构/格式不符不记为正常；未完成全部步骤者按失败环节分类",
+  "sources": [
+    {
+      "id": "s001",
+      "name": "乐播资源",
+      "api": "https://lbapi9.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 7.4,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s002",
+      "name": "乐播JSON",
+      "api": "https://lbapi9.com/api.php/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 7.4,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s003",
+      "name": "JKUN资源",
+      "api": "https://jkunzyapi.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 5.2,
+      "list_count": 20,
+      "search_count": 1
+    },
+    {
+      "id": "s004",
+      "name": "155资源",
+      "api": "https://155api.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 7.4,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s005",
+      "name": "155JSON",
+      "api": "https://155api.com/api.php/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 4.1,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s006",
+      "name": "麻豆资源",
+      "api": "https://91md.me/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 4.7,
+      "list_count": 30,
+      "search_count": 1
+    },
+    {
+      "id": "s007",
+      "name": "番号资源",
+      "api": "http://fhapi9.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 6.4,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s008",
+      "name": "番号JSON",
+      "api": "http://fhapi9.com/api.php/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 6.3,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s009",
+      "name": "滴滴资源",
+      "api": "https://api.ddapi.cc/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 4.4,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s010",
+      "name": "滴滴JSON",
+      "api": "https://api.ddapi.cc/api.php/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 4.1,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s011",
+      "name": "玉兔资源",
+      "api": "https://apiyutu.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 4.7,
+      "list_count": 10,
+      "search_count": 10
+    },
+    {
+      "id": "s012",
+      "name": "玉兔JSON",
+      "api": "https://apiyutu.com/api.php/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 4.2,
+      "list_count": 10,
+      "search_count": 10
+    },
+    {
+      "id": "s013",
+      "name": "辣椒资源",
+      "api": "https://apilj.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 5.7,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s014",
+      "name": "精品X资源",
+      "api": "https://jingpinx.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 5.7,
+      "list_count": 20,
+      "search_count": 12
+    },
+    {
+      "id": "s015",
+      "name": "鲨鱼资源",
+      "api": "https://shayuapi.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 5.5,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s016",
+      "name": "鲨鱼JSON",
+      "api": "https://shayuapi.com/api.php/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 5.2,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s017",
+      "name": "黄AV资源",
+      "api": "https://www.pgxdy.com/api/json.php",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "播放地址异常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "fail"
+      },
+      "note": "播放地址无法连接: ReadTimeout",
+      "elapsed_s": 15.1,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s018",
+      "name": "黄AV-XML",
+      "api": "https://www.pgxdy.com/api/xml.php",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "格式不兼容",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "返回XML，KVideo 仅解析 JSON",
+      "elapsed_s": 1.1
+    },
+    {
+      "id": "s019",
+      "name": "香奶儿资源",
+      "api": "https://www.gdlsp.com/api/json.php",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "播放地址异常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "fail"
+      },
+      "note": "播放地址无法连接: ReadTimeout",
+      "elapsed_s": 15.0,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s020",
+      "name": "香奶儿-XML",
+      "api": "https://www.gdlsp.com/api/xml.php",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "格式不兼容",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "返回XML，KVideo 仅解析 JSON",
+      "elapsed_s": 0.9
+    },
+    {
+      "id": "s021",
+      "name": "淫水机资源",
+      "api": "https://www.xrbsp.com/api/json.php",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "播放地址异常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "fail"
+      },
+      "note": "播放地址无法连接: ProxyError",
+      "elapsed_s": 15.3,
+      "list_count": 20,
+      "search_count": 2
+    },
+    {
+      "id": "s022",
+      "name": "美少女资源",
+      "api": "https://www.msnii.com/api/json.php",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "播放地址异常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "fail"
+      },
+      "note": "播放地址无法连接: ProxyError",
+      "elapsed_s": 15.1,
+      "list_count": 20,
+      "search_count": 2
+    },
+    {
+      "id": "s023",
+      "name": "美少女-XML",
+      "api": "https://www.msnii.com/api/xml.php",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "格式不兼容",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "返回XML，KVideo 仅解析 JSON",
+      "elapsed_s": 0.7
+    },
+    {
+      "id": "s024",
+      "name": "白嫖资源",
+      "api": "https://www.kxgav.com/api/json.php",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "播放地址异常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "fail"
+      },
+      "note": "播放地址无法连接: ReadTimeout",
+      "elapsed_s": 16.5,
+      "list_count": 20,
+      "search_count": 5
+    },
+    {
+      "id": "s025",
+      "name": "CK资源",
+      "api": "https://ckzy.me/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 3.7,
+      "list_count": 20,
+      "search_count": 1
+    },
+    {
+      "id": "s026",
+      "name": "CK百货",
+      "api": "https://ckbh.me/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 5.5,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s027",
+      "name": "黄色仓库",
+      "api": "https://hsckzy888.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 6.3,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s028",
+      "name": "老色逼资源",
+      "api": "https://apilsbzy1.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 3.1,
+      "list_count": 10,
+      "search_count": 10
+    },
+    {
+      "id": "s029",
+      "name": "老色逼JSON",
+      "api": "https://apilsbzy1.com/api.php/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 2.9,
+      "list_count": 10,
+      "search_count": 10
+    },
+    {
+      "id": "s030",
+      "name": "森林资源",
+      "api": "https://slapibf.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 5.0,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s031",
+      "name": "湿乐园",
+      "api": "https://xxavs.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "格式不兼容",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "返回XML，KVideo 仅解析 JSON",
+      "elapsed_s": 0.7
+    },
+    {
+      "id": "s032",
+      "name": "小鸡资源",
+      "api": "https://api.xiaojizy.live/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 3.8,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s033",
+      "name": "越南资源",
+      "api": "https://vnzyz.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "播放地址异常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "fail"
+      },
+      "note": "播放地址 HTTP 404",
+      "elapsed_s": 4.9,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s034",
+      "name": "优异资源",
+      "api": "https://a.uezy.pw/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "格式不兼容",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "返回XML，KVideo 仅解析 JSON",
+      "elapsed_s": 1.2
+    },
+    {
+      "id": "s035",
+      "name": "大奶子资源",
+      "api": "https://apidanaizi.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "播放地址异常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "fail"
+      },
+      "note": "播放地址无法连接: ReadTimeout",
+      "elapsed_s": 15.6,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s036",
+      "name": "芒果资源",
+      "api": "https://mgzyz1.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "格式不兼容",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "返回XML，KVideo 仅解析 JSON",
+      "elapsed_s": 0.8
+    },
+    {
+      "id": "s037",
+      "name": "芒果-XML",
+      "api": "https://mgzyz1.com/api.php/provide/vod/at/xml/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "格式不兼容",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "返回XML，KVideo 仅解析 JSON",
+      "elapsed_s": 0.5
+    },
+    {
+      "id": "s038",
+      "name": "91视频",
+      "api": "https://91av.cyou/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "格式不兼容",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "返回XML，KVideo 仅解析 JSON",
+      "elapsed_s": 2.6
+    },
+    {
+      "id": "s039",
+      "name": "爱蛋资源",
+      "api": "https://lovedan.net/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "播放地址异常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "fail"
+      },
+      "note": "播放地址 HTTP 403",
+      "elapsed_s": 9.9,
+      "list_count": 20,
+      "search_count": 2
+    },
+    {
+      "id": "s040",
+      "name": "杏吧资源",
+      "api": "https://xingba222.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 6.0,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s041",
+      "name": "大地资源",
+      "api": "https://dadiapi.com/api.php",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "格式不兼容",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "返回XML，KVideo 仅解析 JSON",
+      "elapsed_s": 2.4
+    },
+    {
+      "id": "s042",
+      "name": "大地备用",
+      "api": "https://dadiapi.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 6.1,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s043",
+      "name": "百花资源",
+      "api": "https://bhziyuan.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 4.8,
+      "list_count": 20,
+      "search_count": 5
+    },
+    {
+      "id": "s044",
+      "name": "飞飞资源",
+      "api": "http://www.feifei67.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ReadTimeout",
+      "elapsed_s": 13.0
+    },
+    {
+      "id": "s045",
+      "name": "奥斯卡资源",
+      "api": "http://aosikazy.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "搜索失败",
+      "checks": {
+        "list": "ok",
+        "search": "fail",
+        "detail": null,
+        "play": null
+      },
+      "note": "搜索无结果或响应异常",
+      "elapsed_s": 6.3,
+      "list_count": 50
+    },
+    {
+      "id": "s046",
+      "name": "奥斯卡JSON",
+      "api": "http://aosikazy.com/api.php/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "搜索失败",
+      "checks": {
+        "list": "ok",
+        "search": "fail",
+        "detail": null,
+        "play": null
+      },
+      "note": "搜索无结果或响应异常",
+      "elapsed_s": 4.7,
+      "list_count": 50
+    },
+    {
+      "id": "s047",
+      "name": "色南国资源",
+      "api": "https://api.sexnguon.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ProxyError",
+      "elapsed_s": 10.3
+    },
+    {
+      "id": "s048",
+      "name": "老鸭资源",
+      "api": "https://api.apilyzy.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ProxyError",
+      "elapsed_s": 0.4
+    },
+    {
+      "id": "s049",
+      "name": "葡萄资源",
+      "api": "https://api.putaozy.net/inc/apijson_vod.php",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ProxyError",
+      "elapsed_s": 0.3
+    },
+    {
+      "id": "s050",
+      "name": "猫资源",
+      "api": "https://api.maozyapi.com/inc/apijson_vod.php",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "HTTP 523",
+      "elapsed_s": 0.6
+    },
+    {
+      "id": "s051",
+      "name": "花魁资源",
+      "api": "https://caiji.huakuiapi.com/inc/apijson_vod.php",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ProxyError",
+      "elapsed_s": 0.3
+    },
+    {
+      "id": "s052",
+      "name": "TT资源",
+      "api": "https://apittzy.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ProxyError",
+      "elapsed_s": 0.4
+    },
+    {
+      "id": "s053",
+      "name": "KK资源",
+      "api": "https://kkzy.me/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "格式不兼容",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "返回XML，KVideo 仅解析 JSON",
+      "elapsed_s": 2.1
+    },
+    {
+      "id": "s054",
+      "name": "丝袜资源",
+      "api": "https://siwazyw.cc/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ProxyError",
+      "elapsed_s": 0.5
+    },
+    {
+      "id": "s055",
+      "name": "秀色资源",
+      "api": "https://api.xiuseapi.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ProxyError",
+      "elapsed_s": 0.3
+    },
+    {
+      "id": "s056",
+      "name": "乐鱼资源",
+      "api": "https://www.leyuzyapi.com/inc/api.php",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ChunkedEncodingError",
+      "elapsed_s": 2.2
+    },
+    {
+      "id": "s057",
+      "name": "奶香香资源",
+      "api": "https://naixxzy.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "搜索失败",
+      "checks": {
+        "list": "ok",
+        "search": "fail",
+        "detail": null,
+        "play": null
+      },
+      "note": "搜索无结果或响应异常",
+      "elapsed_s": 2.6,
+      "list_count": 50
+    },
+    {
+      "id": "s058",
+      "name": "黄瓜资源",
+      "api": "https://www.avre06.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ProxyError",
+      "elapsed_s": 10.5
+    },
+    {
+      "id": "s059",
+      "name": "草榴资源",
+      "api": "https://www.caoliuzyw.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ProxyError",
+      "elapsed_s": 0.4
+    },
+    {
+      "id": "s060",
+      "name": "番茄资源",
+      "api": "https://fqzy4.me/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ProxyError",
+      "elapsed_s": 1.4
+    },
+    {
+      "id": "s061",
+      "name": "X细胞资源",
+      "api": "https://www.xxibaozyw.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ProxyError",
+      "elapsed_s": 10.3
+    },
+    {
+      "id": "s062",
+      "name": "souav资源",
+      "api": "https://api.souavzy.vip/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ReadTimeout",
+      "elapsed_s": 12.1
+    },
+    {
+      "id": "s063",
+      "name": "橘猫资源",
+      "api": "https://to.to-long.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ProxyError",
+      "elapsed_s": 0.5
+    },
+    {
+      "id": "s064",
+      "name": "淫窝资源",
+      "api": "https://api.yinwoapi.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ProxyError",
+      "elapsed_s": 0.4
+    },
+    {
+      "id": "s065",
+      "name": "色窝资源",
+      "api": "https://sewozyapi.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ProxyError",
+      "elapsed_s": 0.3
+    },
+    {
+      "id": "s066",
+      "name": "久久热资源",
+      "api": "https://www.jiujiure00.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ProxyError",
+      "elapsed_s": 0.4
+    },
+    {
+      "id": "s067",
+      "name": "优优资源",
+      "api": "https://www.yyzywcj.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ProxyError",
+      "elapsed_s": 0.5
+    },
+    {
+      "id": "s068",
+      "name": "乐播备用",
+      "api": "http://lbapiby.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "HTTP 502",
+      "elapsed_s": 1.6
+    },
+    {
+      "id": "s069",
+      "name": "AIvin",
+      "api": "http://lbapiby.com/api.php/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "HTTP 502",
+      "elapsed_s": 0.8
+    },
+    {
+      "id": "s070",
+      "name": "91麻豆备用",
+      "api": "http://91md.me/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 4.0,
+      "list_count": 30,
+      "search_count": 1
+    },
+    {
+      "id": "s071",
+      "name": "色南国备用",
+      "api": "http://api.sexnguon.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ProxyError",
+      "elapsed_s": 10.2
+    },
+    {
+      "id": "s072",
+      "name": "森林备用",
+      "api": "http://slapibf.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 3.4,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s073",
+      "name": "大地备用2",
+      "api": "http://dadiapi.com/api.php",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "格式不兼容",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "返回XML，KVideo 仅解析 JSON",
+      "elapsed_s": 1.1
+    },
+    {
+      "id": "s074",
+      "name": "奥斯卡备用",
+      "api": "http://aosikazy.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "搜索失败",
+      "checks": {
+        "list": "ok",
+        "search": "fail",
+        "detail": null,
+        "play": null
+      },
+      "note": "搜索无结果或响应异常",
+      "elapsed_s": 4.4,
+      "list_count": 50
+    },
+    {
+      "id": "s075",
+      "name": "番号备用",
+      "api": "http://fhapi9.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 3.3,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s076",
+      "name": "老鸭备用",
+      "api": "https://api.apilyzy.com/api.php/provide/vod/at/xml",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ProxyError",
+      "elapsed_s": 0.5
+    },
+    {
+      "id": "s077",
+      "name": "丝袜备用",
+      "api": "https://siwazyw.cc/api.php/provide/vod/at/xml/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ProxyError",
+      "elapsed_s": 0.5
+    },
+    {
+      "id": "s078",
+      "name": "秀色备用",
+      "api": "https://api.xiuseapi.com/api.php/provide/vod/at/xml/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "无法连接: ProxyError",
+      "elapsed_s": 0.3
+    },
+    {
+      "id": "s079",
+      "name": "辣椒JSON",
+      "api": "https://apilj.com/api.php/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 4.8,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s080",
+      "name": "精品JSON",
+      "api": "https://jingpinx.com/api.php/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 5.5,
+      "list_count": 20,
+      "search_count": 12
+    },
+    {
+      "id": "s081",
+      "name": "CK备用",
+      "api": "https://ckzy.me/api.php/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 3.0,
+      "list_count": 20,
+      "search_count": 1
+    },
+    {
+      "id": "s082",
+      "name": "黄色仓库JSON",
+      "api": "https://hsckzy888.com/api.php/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 6.1,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s083",
+      "name": "杏吧JSON",
+      "api": "https://xingba222.com/api.php/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 6.2,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s084",
+      "name": "百花JSON",
+      "api": "https://bhziyuan.com/api.php/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 4.5,
+      "list_count": 20,
+      "search_count": 5
+    },
+    {
+      "id": "s085",
+      "name": "湿乐园JSON",
+      "api": "https://xxavs.com/api.php/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "格式不兼容",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "返回XML，KVideo 仅解析 JSON",
+      "elapsed_s": 0.7
+    },
+    {
+      "id": "s086",
+      "name": "小鸡JSON",
+      "api": "https://api.xiaojizy.live/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "格式不兼容",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "返回非JSON内容，KVideo 仅解析 JSON",
+      "elapsed_s": 0.7
+    },
+    {
+      "id": "s087",
+      "name": "越南JSON",
+      "api": "https://vnzyz.com/api.php/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "播放地址异常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "fail"
+      },
+      "note": "播放地址 HTTP 404",
+      "elapsed_s": 3.2,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s088",
+      "name": "大奶子JSON",
+      "api": "https://apidanaizi.com/api.php/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 3.9,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s089",
+      "name": "爱蛋JSON",
+      "api": "https://lovedan.net/api.php/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "格式不兼容",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "返回XML，KVideo 仅解析 JSON",
+      "elapsed_s": 2.3
+    },
+    {
+      "id": "s090",
+      "name": "91视频JSON",
+      "api": "https://91av.cyou/api.php/provide/vod/at/json",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "格式不兼容",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "返回XML，KVideo 仅解析 JSON",
+      "elapsed_s": 1.1
+    },
+    {
+      "id": "s091",
+      "name": "玉兔备用2",
+      "api": "https://apiyutu.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 4.0,
+      "list_count": 10,
+      "search_count": 10
+    },
+    {
+      "id": "s092",
+      "name": "滴滴备用2",
+      "api": "https://api.ddapi.cc/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 3.0,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s093",
+      "name": "155备用2",
+      "api": "https://155api.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 3.6,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s094",
+      "name": "乐播备用2",
+      "api": "https://lbapi9.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 4.5,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s095",
+      "name": "麻豆备用2",
+      "api": "https://91md.me/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 4.1,
+      "list_count": 30,
+      "search_count": 1
+    },
+    {
+      "id": "s096",
+      "name": "番号备用2",
+      "api": "http://fhapi9.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 3.5,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s097",
+      "name": "黄AV备用2",
+      "api": "https://www.pgxdy.com/api/json.php",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "播放地址异常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "fail"
+      },
+      "note": "播放地址无法连接: ReadTimeout",
+      "elapsed_s": 14.6,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s098",
+      "name": "香奶儿备用2",
+      "api": "https://www.gdlsp.com/api/json.php",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "播放地址异常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "fail"
+      },
+      "note": "播放地址无法连接: ReadTimeout",
+      "elapsed_s": 15.1,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s099",
+      "name": "淫水机备用2",
+      "api": "https://www.xrbsp.com/api/json.php",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "播放地址异常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "fail"
+      },
+      "note": "播放地址无法连接: ProxyError",
+      "elapsed_s": 13.0,
+      "list_count": 20,
+      "search_count": 2
+    },
+    {
+      "id": "s100",
+      "name": "美少女备用2",
+      "api": "https://www.msnii.com/api/json.php",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "播放地址异常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "fail"
+      },
+      "note": "播放地址无法连接: ProxyError",
+      "elapsed_s": 12.4,
+      "list_count": 20,
+      "search_count": 2
+    },
+    {
+      "id": "s101",
+      "name": "白嫖备用2",
+      "api": "https://www.kxgav.com/api/json.php",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "播放地址异常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "fail"
+      },
+      "note": "播放地址无法连接: ReadTimeout",
+      "elapsed_s": 14.8,
+      "list_count": 20,
+      "search_count": 5
+    },
+    {
+      "id": "s102",
+      "name": "森林备用2",
+      "api": "https://slapibf.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 3.2,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s103",
+      "name": "湿乐园备用2",
+      "api": "https://xxavs.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "格式不兼容",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "返回XML，KVideo 仅解析 JSON",
+      "elapsed_s": 0.5
+    },
+    {
+      "id": "s104",
+      "name": "小鸡备用2",
+      "api": "https://api.xiaojizy.live/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 3.9,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s105",
+      "name": "越南备用2",
+      "api": "https://vnzyz.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "播放地址异常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "fail"
+      },
+      "note": "播放地址 HTTP 404",
+      "elapsed_s": 3.0,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s106",
+      "name": "优异备用2",
+      "api": "https://a.uezy.pw/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "格式不兼容",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "返回XML，KVideo 仅解析 JSON",
+      "elapsed_s": 0.7
+    },
+    {
+      "id": "s107",
+      "name": "大奶子备用2",
+      "api": "https://apidanaizi.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 3.2,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s108",
+      "name": "芒果备用2",
+      "api": "https://mgzyz1.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "格式不兼容",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "返回XML，KVideo 仅解析 JSON",
+      "elapsed_s": 0.4
+    },
+    {
+      "id": "s109",
+      "name": "91视频备用2",
+      "api": "https://91av.cyou/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "格式不兼容",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "返回XML，KVideo 仅解析 JSON",
+      "elapsed_s": 1.0
+    },
+    {
+      "id": "s110",
+      "name": "爱蛋备用2",
+      "api": "https://lovedan.net/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "详情失败",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "fail",
+        "play": null
+      },
+      "note": "详情接口无有效返回",
+      "elapsed_s": 6.7,
+      "list_count": 20,
+      "search_count": 2
+    },
+    {
+      "id": "s111",
+      "name": "杏吧备用2",
+      "api": "https://xingba222.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 3.9,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s112",
+      "name": "大地备用3",
+      "api": "https://dadiapi.com/api.php",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "格式不兼容",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "返回XML，KVideo 仅解析 JSON",
+      "elapsed_s": 1.5
+    },
+    {
+      "id": "s113",
+      "name": "百花备用2",
+      "api": "https://bhziyuan.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 4.8,
+      "list_count": 20,
+      "search_count": 5
+    },
+    {
+      "id": "s114",
+      "name": "飞飞备用2",
+      "api": "http://www.feifei67.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "连接失败",
+      "checks": {
+        "list": "fail",
+        "search": null,
+        "detail": null,
+        "play": null
+      },
+      "note": "HTTP 401",
+      "elapsed_s": 8.9
+    },
+    {
+      "id": "s115",
+      "name": "奥斯卡备用2",
+      "api": "http://aosikazy.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "搜索失败",
+      "checks": {
+        "list": "ok",
+        "search": "fail",
+        "detail": null,
+        "play": null
+      },
+      "note": "搜索无结果或响应异常",
+      "elapsed_s": 4.8,
+      "list_count": 50
+    },
+    {
+      "id": "s116",
+      "name": "老色逼备用2",
+      "api": "https://apilsbzy1.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 2.8,
+      "list_count": 10,
+      "search_count": 10
+    },
+    {
+      "id": "s117",
+      "name": "CK备用2",
+      "api": "https://ckzy.me/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 2.9,
+      "list_count": 20,
+      "search_count": 1
+    },
+    {
+      "id": "s118",
+      "name": "黄色仓库备用2",
+      "api": "https://hsckzy888.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 3.0,
+      "list_count": 20,
+      "search_count": 20
+    },
+    {
+      "id": "s119",
+      "name": "JKUN备用2",
+      "api": "https://jkunzyapi.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 2.9,
+      "list_count": 20,
+      "search_count": 1
+    },
+    {
+      "id": "s120",
+      "name": "鲨鱼备用2",
+      "api": "https://shayuapi.com/api.php/provide/vod/",
+      "original_type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "status": "正常",
+      "checks": {
+        "list": "ok",
+        "search": "ok",
+        "detail": "ok",
+        "play": "ok"
+      },
+      "note": "搜索、详情、播放地址均通过实测",
+      "elapsed_s": 4.9,
+      "list_count": 20,
+      "search_count": 20
+    }
+  ]
+}
